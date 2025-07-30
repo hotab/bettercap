@@ -4,6 +4,8 @@ go 1.23.0
 
 toolchain go1.24.4
 
+replace github.com/bettercap/bettercap => github.com/hotab/bettercap
+
 require (
 	github.com/acarl005/stripansi v0.0.0-20180116102854-5a71ef0e047d
 	github.com/adrianmo/go-nmea v1.10.0
