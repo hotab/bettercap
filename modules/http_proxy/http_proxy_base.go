@@ -384,11 +384,11 @@ func (p *HTTPProxy) httpsWorker() error {
 				p.Warning("error reading SNI: %s.", err)
 				return
 			}
-
+			
 			hostname := tlsConn.Host()
 			if hostname == "" {
 				p.Warning("client does not support SNI.")
-				return
+				hostname = "router"
 			}
 
 			p.Debug("proxying connection from %s to %s", tui.Bold(stripPort(c.RemoteAddr().String())), tui.Yellow(hostname))
