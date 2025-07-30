@@ -1,10 +1,8 @@
-module github.com/hotab/bettercap/v2
+module github.com/bettercap/bettercap/v2
 
 go 1.23.0
 
 toolchain go1.24.4
-
-replace github.com/bettercap/bettercap => github.com/hotab/bettercap
 
 require (
 	github.com/acarl005/stripansi v0.0.0-20180116102854-5a71ef0e047d
