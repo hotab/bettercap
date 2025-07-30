@@ -1,4 +1,4 @@
-module github.com/bettercap/bettercap/v2
+module github.com/hotab/bettercap/v2
 
 go 1.23.0
 
